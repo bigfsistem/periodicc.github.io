@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&amp;display=swap');
+
+* {
+    text-align: center;
+    font-family: "Ubuntu";
+    background-color: rgb(95, 167, 249);
+}
+
+.fas {
+    background-color: transparent
+}
+
+.boxContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxContainer > textarea::placeholder {
+    color: rgba(255, 255, 255, 0.73);
+}
+
+.boxContainer > textarea::selection {
+    background-color: rgb(9, 56, 131);
+    color: #ffffff;
+}
+
+.boxContainer > img {
+    width: 120px;
+    border-radius: 180px;
+    object-fit: cover;
+}
+
+.boxContainer > textarea {  
+    margin-bottom: 23px;
+    height: 350px;
+    width: 400px;
+    resize: none;
+    background-color: rgb(16, 111, 220);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 5px 7px 5px;
+    font-size: 17px;
+    transition: all 0.25s;
+}
+
+.boxContainer > textarea:focus {  
+    box-shadow: 0px 0px 10px rgb(11, 65, 126);
+}
+
+.boxContainer > textarea::-webkit-scrollbar{    
+    display: none; 
+}
+
+.boxContainer > textarea:focus {
+    outline: none;
+}
+
+.boxContainer > button:hover {
+    background-color: rgba(16, 111, 220, 0.8);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.10);
+}
+
+.boxContainer > button:active {
+    background-color: rgba(16, 111, 220, 0.5);
+}
+
+.boxContainer > button {
+    background-color: rgb(16, 111, 220);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: all 0.25s;
+
+}
+
+.boxContainer > h1, .boxContainer > h2, .boxContainer > img, .boxContainer > button {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.boxContainer > h2 {
+    font-size: 27px;
+    text-decoration: underline;
+}
+
+.resultsDiv > h2 {
+    font-size: 22px;
+}
+
+.loading {
+    border: 12px solid black;
+    border-radius: 50%;
+    border-top: 12px solid white;
+    width: 50px;
+    height: 50px;
+    animation: rotate 2.05s linear infinite;
+    display: inline-block;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
